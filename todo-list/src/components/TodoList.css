@@ -1,0 +1,91 @@
+.todolist {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: white;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: rgb(222, 230, 247); */
+  background-color: #212121;
+  /* padding: 20px; */
+  color: rgb(255, 255, 255);
+  padding-bottom: 20px;
+  height: 100%;
+}
+
+.todo-input {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+  padding: 8px;
+  border: none;
+}
+
+/* .todo-input::placeholder {
+  color: green;
+} */
+
+.todo-input:focus {
+  outline: none;
+}
+
+.todo-btn {
+  background-color: #0866ff;
+  border-radius: 100px;
+  border: none;
+  color: white;
+}
+
+.todo-btn:hover {
+  background-color: #1e74fe;
+  cursor: pointer;
+}
+
+.remove-btn {
+  background-color: transparent;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background-color: rgb(227, 58, 58);
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: center;
+  background-color: rgb(249, 249, 249);
+  padding-left: 8px;
+  border-radius: 20px;
+}
+
+.trash-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 280px;
+  /* background-color: rgb(48, 48, 129); */
+  background-color: #424242;
+  padding: 10px;
+  border-radius: 20px;
+  color: black;
+}
+
+/* body {
+  background-color: rgb(222, 230, 247);
+} */
