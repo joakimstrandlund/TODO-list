@@ -6,11 +6,20 @@ const NavBar = () => {
   return (
     <div className="NavBar">
       {/* <h1 className="logga">logga</h1> */}
-      <img className="logo" src="https://cdn-icons-png.freepik.com/256/11207/11207604.png?semt=ais_hybrid"></img>
+      <Link to="/">
+        <img className="logo" src="https://cdn-icons-png.freepik.com/256/11207/11207604.png?semt=ais_hybrid" />
+      </Link>
       <div>
-        <Link to="/">About</Link>
-        <Link to="/Informationpage">Information</Link>
-        <Link to="/Todopage">Todo list</Link>
+        {/* <Link to="/"></Link> */}
+        <Link className="link" to="/Aboutpage">
+          About
+        </Link>
+        <Link className="link" to="/Informationpage">
+          Information
+        </Link>
+        <Link className="link" to="/Todopage">
+          Todo list
+        </Link>
       </div>
     </div>
   );
