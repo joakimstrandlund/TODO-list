@@ -41,6 +41,8 @@ const TodoList = () => {
     localStorage.setItem('todoList', JSON.stringify(newList));
   };
 
+  const completedText = list.length < 1;
+
   return (
     <div className="form">
       <h2>Todo list</h2>
@@ -50,6 +52,7 @@ const TodoList = () => {
           Add task
         </button>
       </div>
+      {completedText && <p>You have no more task todo!</p>}
       {list.length !== 0 ? (
         <div className="todo-container">
           {list.map((todo) => {
