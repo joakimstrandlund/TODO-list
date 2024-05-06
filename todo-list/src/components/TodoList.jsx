@@ -12,7 +12,7 @@ import './TodoList.css';
 const TodoList = () => {
   const localList = localStorage.getItem('todoList');
   // JSON.parse() gör en string till array
-  const localListArray = JSON.parse(localList);
+  const localListArray = localList ? JSON.parse(localList) : [];
   const [list, setList] = useState(localListArray);
   const [input, setInput] = useState('');
 
@@ -45,14 +45,14 @@ const TodoList = () => {
 
   return (
     <div className="form">
-      <h2>Todo list</h2>
+      <h2>Todo-list</h2>
       <div className="todolist">
         <input type="text" value={input} className="todo-input" placeholder="Enter your task here" onChange={(e) => setInput(e.target.value)} />
         <button className="todo-btn" onClick={addTodo}>
           Add task
         </button>
       </div>
-      {completedText && <p>You have no more task todo!</p>}
+      {completedText && <p>You have no more task to do!</p>}
       {list.length !== 0 ? (
         <div className="todo-container">
           {list.map((todo) => {

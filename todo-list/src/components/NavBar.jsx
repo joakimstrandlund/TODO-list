@@ -18,7 +18,7 @@ const NavBar = () => {
           Information
         </Link>
         <Link className="link" to="/Todopage">
-          Todo list
+          Todo-list
         </Link>
       </div>
     </div>
